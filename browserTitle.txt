@@ -1,6 +1,0 @@
-1 → Fast Arrow 1.5
-2 → Fast Arrow
-3 → Fast Arrow: Cr
-4 → Fast Arrow: Cr Build15
-5 → Fast Arrow: Cr Build15 - Albaldah
-6 → Albaldah
