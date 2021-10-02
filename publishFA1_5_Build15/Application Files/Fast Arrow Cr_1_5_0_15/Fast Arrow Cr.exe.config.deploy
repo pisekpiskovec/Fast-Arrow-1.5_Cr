@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="Fast_Arrow_Cr.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+    <userSettings>
+        <Fast_Arrow_Cr.Properties.Settings>
+            <setting name="fillWebCheck" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="searchEngine" serializeAs="String">
+                <value>duck</value>
+            </setting>
+            <setting name="browserTheme" serializeAs="String">
+                <value>cyan</value>
+            </setting>
+            <setting name="panelColorCyan" serializeAs="String">
+                <value>0, 188, 212</value>
+            </setting>
+            <setting name="homePage" serializeAs="String">
+                <value>duck.com/?t=fa</value>
+            </setting>
+            <setting name="homePageOnStart" serializeAs="String">
+                <value>False</value>
+            </setting>
+        </Fast_Arrow_Cr.Properties.Settings>
+    </userSettings>
+</configuration>
