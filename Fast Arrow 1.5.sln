@@ -27,46 +27,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NewWindow", "http://localho
 		Release.AspNetCompiler.Debug = "False"
 		SlnRelativePath = "E:\Vojta - Dokumenty\My Web Sites\NewWindow\"
 	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_56740"
-		Debug.AspNetCompiler.PhysicalPath = "E:\Vojta - Dokumenty\My Web Sites\NewWindow\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56740\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_56740"
-		Release.AspNetCompiler.PhysicalPath = "E:\Vojta - Dokumenty\My Web Sites\NewWindow\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56740\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "E:\Vojta - Dokumenty\My Web Sites\NewWindow\"
-	EndProjectSection
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NewWindow", "pages\NewWindow\", "{2E04D531-DAC7-488C-82B5-B26A22C684E3}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_64820"
-		Debug.AspNetCompiler.PhysicalPath = "pages\NewWindow\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64820\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_64820"
-		Release.AspNetCompiler.PhysicalPath = "pages\NewWindow\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64820\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "64820"
-		SlnRelativePath = "pages\NewWindow\"
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,18 +68,6 @@ Global
 		{F837EE00-65E1-46CF-931D-78C127761CF1}.Release|x64.Build.0 = Debug|Any CPU
 		{F837EE00-65E1-46CF-931D-78C127761CF1}.Release|x86.ActiveCfg = Debug|Any CPU
 		{F837EE00-65E1-46CF-931D-78C127761CF1}.Release|x86.Build.0 = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Debug|x64.Build.0 = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Debug|x86.Build.0 = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Release|x64.ActiveCfg = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Release|x64.Build.0 = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Release|x86.ActiveCfg = Debug|Any CPU
-		{2E04D531-DAC7-488C-82B5-B26A22C684E3}.Release|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
