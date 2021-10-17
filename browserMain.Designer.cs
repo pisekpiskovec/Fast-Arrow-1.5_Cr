@@ -44,10 +44,6 @@
             this.translateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.weatherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customFastPagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customFastPage1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customFastPage2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customFastPage3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customFastPage4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.devToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chromiumVersionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,6 +66,10 @@
             this.tSearch = new System.Windows.Forms.TextBox();
             this.bMaxiOld = new System.Windows.Forms.PictureBox();
             this.pSettings = new System.Windows.Forms.PictureBox();
+            this.customFastPage1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customFastPage2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customFastPage3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customFastPage4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pURL)).BeginInit();
             this.pURL.SuspendLayout();
@@ -216,38 +216,6 @@
             this.customFastPagesToolStripMenuItem.Name = "customFastPagesToolStripMenuItem";
             this.customFastPagesToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.customFastPagesToolStripMenuItem.Text = "Custom Fast Pages";
-            // 
-            // customFastPage1ToolStripMenuItem
-            // 
-            this.customFastPage1ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.customFastPage1ToolStripMenuItem.Name = "customFastPage1ToolStripMenuItem";
-            this.customFastPage1ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
-            this.customFastPage1ToolStripMenuItem.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.cfpName1;
-            this.customFastPage1ToolStripMenuItem.Click += new System.EventHandler(this.CustomFastPage1ToolStripMenuItem_Click);
-            // 
-            // customFastPage2ToolStripMenuItem
-            // 
-            this.customFastPage2ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.customFastPage2ToolStripMenuItem.Name = "customFastPage2ToolStripMenuItem";
-            this.customFastPage2ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
-            this.customFastPage2ToolStripMenuItem.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.cfpName2;
-            this.customFastPage2ToolStripMenuItem.Click += new System.EventHandler(this.CustomFastPage2ToolStripMenuItem_Click);
-            // 
-            // customFastPage3ToolStripMenuItem
-            // 
-            this.customFastPage3ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.customFastPage3ToolStripMenuItem.Name = "customFastPage3ToolStripMenuItem";
-            this.customFastPage3ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
-            this.customFastPage3ToolStripMenuItem.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.cfpURL3;
-            this.customFastPage3ToolStripMenuItem.Click += new System.EventHandler(this.CustomFastPage3ToolStripMenuItem_Click);
-            // 
-            // customFastPage4ToolStripMenuItem
-            // 
-            this.customFastPage4ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.customFastPage4ToolStripMenuItem.Name = "customFastPage4ToolStripMenuItem";
-            this.customFastPage4ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
-            this.customFastPage4ToolStripMenuItem.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.cfpName4;
-            this.customFastPage4ToolStripMenuItem.Click += new System.EventHandler(this.CustomFastPage4ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -436,7 +404,7 @@
             this.lSettings.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lSettings.Size = new System.Drawing.Size(208, 25);
             this.lSettings.TabIndex = 2;
-            this.lSettings.Text = "Fast Arrow: Cr Build20";
+            this.lSettings.Text = "Fast Arrow: Cr Build21";
             this.lSettings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip.SetToolTip(this.lSettings, "Settings");
             this.lSettings.Click += new System.EventHandler(this.LSettings_Click);
@@ -493,6 +461,38 @@
             this.pSettings.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PSettings_MouseMove);
             this.pSettings.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PSettings_MouseUp);
             // 
+            // customFastPage1ToolStripMenuItem
+            // 
+            this.customFastPage1ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.customFastPage1ToolStripMenuItem.Name = "customFastPage1ToolStripMenuItem";
+            this.customFastPage1ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.customFastPage1ToolStripMenuItem.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.cfpName1;
+            this.customFastPage1ToolStripMenuItem.Click += new System.EventHandler(this.CustomFastPage1ToolStripMenuItem_Click);
+            // 
+            // customFastPage2ToolStripMenuItem
+            // 
+            this.customFastPage2ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.customFastPage2ToolStripMenuItem.Name = "customFastPage2ToolStripMenuItem";
+            this.customFastPage2ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.customFastPage2ToolStripMenuItem.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.cfpName2;
+            this.customFastPage2ToolStripMenuItem.Click += new System.EventHandler(this.CustomFastPage2ToolStripMenuItem_Click);
+            // 
+            // customFastPage3ToolStripMenuItem
+            // 
+            this.customFastPage3ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.customFastPage3ToolStripMenuItem.Name = "customFastPage3ToolStripMenuItem";
+            this.customFastPage3ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.customFastPage3ToolStripMenuItem.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.cfpURL3;
+            this.customFastPage3ToolStripMenuItem.Click += new System.EventHandler(this.CustomFastPage3ToolStripMenuItem_Click);
+            // 
+            // customFastPage4ToolStripMenuItem
+            // 
+            this.customFastPage4ToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.customFastPage4ToolStripMenuItem.Name = "customFastPage4ToolStripMenuItem";
+            this.customFastPage4ToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.customFastPage4ToolStripMenuItem.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.cfpName4;
+            this.customFastPage4ToolStripMenuItem.Click += new System.EventHandler(this.CustomFastPage4ToolStripMenuItem_Click);
+            // 
             // browserMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,7 +511,7 @@
             this.MinimumSize = new System.Drawing.Size(777, 200);
             this.Name = "browserMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fast Arrow: Cr Build20 - Bharani";
+            this.Text = "Fast Arrow: Cr Build21 - Betria";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.browserKeyNavigation);

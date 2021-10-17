@@ -210,7 +210,7 @@ namespace Fast_Arrow_Cr.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        [global::System.Configuration.DefaultSettingValueAttribute("21")]
         public string browserBuildVersion {
             get {
                 return ((string)(this["browserBuildVersion"]));
