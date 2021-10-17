@@ -35,6 +35,7 @@
             this.lTitle = new System.Windows.Forms.Label();
             this.bClose = new System.Windows.Forms.PictureBox();
             this.pSettings = new System.Windows.Forms.Panel();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.lFastPagesSections = new System.Windows.Forms.Label();
             this.lFastPages = new System.Windows.Forms.Label();
             this.lStartUp = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@
             this.scrollStartUp = new System.Windows.Forms.HScrollBar();
             this.scrollSearch = new System.Windows.Forms.HScrollBar();
             this.scrollTheme = new System.Windows.Forms.HScrollBar();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.pAbout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bClose)).BeginInit();
             this.pSettings.SuspendLayout();
@@ -100,10 +100,10 @@
             this.lAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.lAbout.Location = new System.Drawing.Point(12, 37);
             this.lAbout.Name = "lAbout";
-            this.lAbout.Size = new System.Drawing.Size(265, 150);
+            this.lAbout.Size = new System.Drawing.Size(248, 150);
             this.lAbout.TabIndex = 1;
-            this.lAbout.Text = "Name: Fast Arrow\r\nVersion: Cr Build20 - Bharani\r\nGUI: Panel 1.0.1\r\nChromium: 93.0" +
-    ".4577.63\r\nPhase: Core\r\n2021";
+            this.lAbout.Text = "Name: Fast Arrow\r\nVersion: Cr Build21 - Betria\r\nGUI: Panel 1.0.1\r\nChromium: 94.0." +
+    "4606.71\r\nPhase: Core\r\n2021";
             this.lAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lTitle
@@ -168,6 +168,14 @@
             this.pSettings.Name = "pSettings";
             this.pSettings.Size = new System.Drawing.Size(454, 325);
             this.pSettings.TabIndex = 1;
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(213, 45);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(39, 271);
+            this.vScrollBar1.TabIndex = 35;
+            this.vScrollBar1.Visible = false;
             // 
             // lFastPagesSections
             // 
@@ -437,14 +445,6 @@
             this.scrollTheme.TabIndex = 14;
             this.scrollTheme.Value = global::Fast_Arrow_Cr.Properties.Settings.Default.browserTheme;
             this.scrollTheme.ValueChanged += new System.EventHandler(this.saveSettings);
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(213, 45);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(39, 271);
-            this.vScrollBar1.TabIndex = 35;
-            this.vScrollBar1.Visible = false;
             // 
             // browserAbout
             // 

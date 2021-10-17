@@ -35,6 +35,17 @@
             this.listHirstoySearch = new System.Windows.Forms.ListBox();
             this.listHistoryBrowse = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pHomeSett = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lHome = new System.Windows.Forms.Label();
+            this.pThemeSett = new System.Windows.Forms.Panel();
+            this.lThemes = new System.Windows.Forms.Label();
+            this.pSearchSett = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.timerWindowState = new System.Windows.Forms.Timer(this.components);
+            this.bResetSettings = new System.Windows.Forms.Button();
             this.tCFPurl4 = new System.Windows.Forms.TextBox();
             this.tCFPurl3 = new System.Windows.Forms.TextBox();
             this.tCFPurl2 = new System.Windows.Forms.TextBox();
@@ -43,29 +54,18 @@
             this.tCFPName2 = new System.Windows.Forms.TextBox();
             this.tCFPurl1 = new System.Windows.Forms.TextBox();
             this.tCFPName1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pHomeSett = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.trackStarupPageSelector = new System.Windows.Forms.TrackBar();
             this.tHomeURL = new System.Windows.Forms.TextBox();
-            this.lHome = new System.Windows.Forms.Label();
-            this.pThemeSett = new System.Windows.Forms.Panel();
-            this.lThemes = new System.Windows.Forms.Label();
             this.trackThemeSelector = new System.Windows.Forms.TrackBar();
-            this.pSearchSett = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.trackSearchEngineSelector = new System.Windows.Forms.TrackBar();
-            this.timerWindowState = new System.Windows.Forms.Timer(this.components);
-            this.bResetSettings = new System.Windows.Forms.Button();
             this.groupAbout.SuspendLayout();
             this.groupSettings.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pHomeSett.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackStarupPageSelector)).BeginInit();
             this.pThemeSett.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackThemeSelector)).BeginInit();
             this.pSearchSett.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackStarupPageSelector)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackThemeSelector)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackSearchEngineSelector)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +76,7 @@
             this.groupAbout.Controls.Add(this.labelAbout);
             this.groupAbout.Location = new System.Drawing.Point(90, 12);
             this.groupAbout.Name = "groupAbout";
-            this.groupAbout.Size = new System.Drawing.Size(154, 125);
+            this.groupAbout.Size = new System.Drawing.Size(152, 125);
             this.groupAbout.TabIndex = 0;
             this.groupAbout.TabStop = false;
             this.groupAbout.Text = "About";
@@ -86,10 +86,10 @@
             this.labelAbout.AutoSize = true;
             this.labelAbout.Location = new System.Drawing.Point(7, 18);
             this.labelAbout.Name = "labelAbout";
-            this.labelAbout.Size = new System.Drawing.Size(141, 91);
+            this.labelAbout.Size = new System.Drawing.Size(139, 91);
             this.labelAbout.TabIndex = 0;
-            this.labelAbout.Text = "Name: Fast Arrow\r\nVersion: Cr Build20 - Bharani\r\nMain - GUI: Panel 1.0.1\r\nSetting" +
-    "s - GUI: Trident 2.0.1\r\nChromium: 93.0.4577.63\r\nPhase: Core\r\n2021";
+            this.labelAbout.Text = "Name: Fast Arrow\r\nVersion: Cr Build21 - Betria\r\nMain - GUI: Panel 1.0.1\r\nSettings" +
+    " - GUI: Trident 2.0.1\r\nChromium: 94.0.4606.71\r\nPhase: Core\r\n2021";
             this.labelAbout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupSettings
@@ -147,6 +147,109 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(199, 141);
             this.panel3.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(121, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Page URL";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(21, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Page Name";
+            // 
+            // pHomeSett
+            // 
+            this.pHomeSett.Controls.Add(this.label4);
+            this.pHomeSett.Controls.Add(this.trackStarupPageSelector);
+            this.pHomeSett.Controls.Add(this.tHomeURL);
+            this.pHomeSett.Controls.Add(this.lHome);
+            this.pHomeSett.Location = new System.Drawing.Point(197, 163);
+            this.pHomeSett.Name = "pHomeSett";
+            this.pHomeSett.Size = new System.Drawing.Size(199, 111);
+            this.pHomeSett.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(182, 26);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "1 → Go to home page at startup\r\n2 → Go to last visited page at startup";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lHome
+            // 
+            this.lHome.AutoSize = true;
+            this.lHome.Location = new System.Drawing.Point(77, 5);
+            this.lHome.Name = "lHome";
+            this.lHome.Size = new System.Drawing.Size(38, 13);
+            this.lHome.TabIndex = 0;
+            this.lHome.Text = "Home:";
+            // 
+            // pThemeSett
+            // 
+            this.pThemeSett.Controls.Add(this.lThemes);
+            this.pThemeSett.Controls.Add(this.trackThemeSelector);
+            this.pThemeSett.Location = new System.Drawing.Point(6, 115);
+            this.pThemeSett.Name = "pThemeSett";
+            this.pThemeSett.Size = new System.Drawing.Size(191, 93);
+            this.pThemeSett.TabIndex = 6;
+            // 
+            // lThemes
+            // 
+            this.lThemes.AutoSize = true;
+            this.lThemes.Location = new System.Drawing.Point(67, 31);
+            this.lThemes.Name = "lThemes";
+            this.lThemes.Size = new System.Drawing.Size(56, 52);
+            this.lThemes.TabIndex = 0;
+            this.lThemes.Text = "1 → Cyan\r\n2 → Teal\r\n3 → Air\r\n4 → Metal";
+            this.lThemes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pSearchSett
+            // 
+            this.pSearchSett.Controls.Add(this.label3);
+            this.pSearchSett.Controls.Add(this.trackSearchEngineSelector);
+            this.pSearchSett.Location = new System.Drawing.Point(6, 16);
+            this.pSearchSett.Name = "pSearchSett";
+            this.pSearchSett.Size = new System.Drawing.Size(191, 93);
+            this.pSearchSett.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(47, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 52);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "1 → Google\r\n2 → DuckDuckGo\r\n3 → Bing\r\n4 → Wikipedia";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timerWindowState
+            // 
+            this.timerWindowState.Enabled = true;
+            this.timerWindowState.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // bResetSettings
+            // 
+            this.bResetSettings.AutoSize = true;
+            this.bResetSettings.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bResetSettings.Location = new System.Drawing.Point(250, 64);
+            this.bResetSettings.Name = "bResetSettings";
+            this.bResetSettings.Size = new System.Drawing.Size(86, 23);
+            this.bResetSettings.TabIndex = 1;
+            this.bResetSettings.Text = "Reset Settings";
+            this.bResetSettings.UseVisualStyleBackColor = true;
+            this.bResetSettings.Click += new System.EventHandler(this.BResetSettings_Click);
             // 
             // tCFPurl4
             // 
@@ -228,45 +331,6 @@
             this.tCFPName1.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.cfpName1;
             this.tCFPName1.TextChanged += new System.EventHandler(this.TCFPName1_TextChanged);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(121, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Page URL";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Page Name";
-            // 
-            // pHomeSett
-            // 
-            this.pHomeSett.Controls.Add(this.label4);
-            this.pHomeSett.Controls.Add(this.trackStarupPageSelector);
-            this.pHomeSett.Controls.Add(this.tHomeURL);
-            this.pHomeSett.Controls.Add(this.lHome);
-            this.pHomeSett.Location = new System.Drawing.Point(197, 163);
-            this.pHomeSett.Name = "pHomeSett";
-            this.pHomeSett.Size = new System.Drawing.Size(199, 111);
-            this.pHomeSett.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(182, 26);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "1 → Go to home page at startup\r\n2 → Go to last visited page at startup";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // trackStarupPageSelector
             // 
             this.trackStarupPageSelector.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::Fast_Arrow_Cr.Properties.Settings.Default, "startupPage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -291,34 +355,6 @@
             this.tHomeURL.Text = global::Fast_Arrow_Cr.Properties.Settings.Default.homePage;
             this.tHomeURL.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // lHome
-            // 
-            this.lHome.AutoSize = true;
-            this.lHome.Location = new System.Drawing.Point(77, 5);
-            this.lHome.Name = "lHome";
-            this.lHome.Size = new System.Drawing.Size(38, 13);
-            this.lHome.TabIndex = 0;
-            this.lHome.Text = "Home:";
-            // 
-            // pThemeSett
-            // 
-            this.pThemeSett.Controls.Add(this.lThemes);
-            this.pThemeSett.Controls.Add(this.trackThemeSelector);
-            this.pThemeSett.Location = new System.Drawing.Point(6, 115);
-            this.pThemeSett.Name = "pThemeSett";
-            this.pThemeSett.Size = new System.Drawing.Size(191, 93);
-            this.pThemeSett.TabIndex = 6;
-            // 
-            // lThemes
-            // 
-            this.lThemes.AutoSize = true;
-            this.lThemes.Location = new System.Drawing.Point(67, 31);
-            this.lThemes.Name = "lThemes";
-            this.lThemes.Size = new System.Drawing.Size(56, 52);
-            this.lThemes.TabIndex = 0;
-            this.lThemes.Text = "1 → Cyan\r\n2 → Teal\r\n3 → Air\r\n4 → Metal";
-            this.lThemes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // trackThemeSelector
             // 
             this.trackThemeSelector.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::Fast_Arrow_Cr.Properties.Settings.Default, "browserTheme", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -333,25 +369,6 @@
             this.trackThemeSelector.Value = global::Fast_Arrow_Cr.Properties.Settings.Default.browserTheme;
             this.trackThemeSelector.Scroll += new System.EventHandler(this.saveSettings);
             // 
-            // pSearchSett
-            // 
-            this.pSearchSett.Controls.Add(this.label3);
-            this.pSearchSett.Controls.Add(this.trackSearchEngineSelector);
-            this.pSearchSett.Location = new System.Drawing.Point(6, 16);
-            this.pSearchSett.Name = "pSearchSett";
-            this.pSearchSett.Size = new System.Drawing.Size(191, 93);
-            this.pSearchSett.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 52);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "1 → Google\r\n2 → DuckDuckGo\r\n3 → Bing\r\n4 → Wikipedia";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // trackSearchEngineSelector
             // 
             this.trackSearchEngineSelector.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::Fast_Arrow_Cr.Properties.Settings.Default, "searchEngine", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -365,23 +382,6 @@
             this.trackSearchEngineSelector.TabStop = false;
             this.trackSearchEngineSelector.Value = global::Fast_Arrow_Cr.Properties.Settings.Default.searchEngine;
             this.trackSearchEngineSelector.Scroll += new System.EventHandler(this.saveSettings);
-            // 
-            // timerWindowState
-            // 
-            this.timerWindowState.Enabled = true;
-            this.timerWindowState.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // bResetSettings
-            // 
-            this.bResetSettings.AutoSize = true;
-            this.bResetSettings.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bResetSettings.Location = new System.Drawing.Point(250, 64);
-            this.bResetSettings.Name = "bResetSettings";
-            this.bResetSettings.Size = new System.Drawing.Size(86, 23);
-            this.bResetSettings.TabIndex = 1;
-            this.bResetSettings.Text = "Reset Settings";
-            this.bResetSettings.UseVisualStyleBackColor = true;
-            this.bResetSettings.Click += new System.EventHandler(this.BResetSettings_Click);
             // 
             // browserSettings
             // 
@@ -409,12 +409,12 @@
             this.panel3.PerformLayout();
             this.pHomeSett.ResumeLayout(false);
             this.pHomeSett.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackStarupPageSelector)).EndInit();
             this.pThemeSett.ResumeLayout(false);
             this.pThemeSett.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackThemeSelector)).EndInit();
             this.pSearchSett.ResumeLayout(false);
             this.pSearchSett.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackStarupPageSelector)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackThemeSelector)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackSearchEngineSelector)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
